@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def get_toyota_data() -> list[dict]:
-    filepath = Path(__file__).parent / "data_toyota.json"
+    filepath = Path(__file__).parent.parent.parent / "data.json"
     with open(filepath, "r") as f:
         raw = json.load(f)
 
