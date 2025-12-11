@@ -14,9 +14,13 @@ def get_toyota_data() -> list[dict]:
         data.append(
             {
                 "url": f"https://www.toyota.es/coches-segunda-mano/ficha.{item['id']}",
-                "vehicle_status": item["vehicleStatus"]["description"],
+                "vehicle_status": item['vehicleStatus']['description'],
                 "price": item["price"]["sellingPriceInclVAT"],
+                "warranty":item['warranty']['code'],
                 "km": item["mileage"]["value"],
+                "unit":item['mileage']['unit']['description'],
+                "is_hub_car":item['isHubCar'],
+                "pricing_source":item['price']['pricingSource']['code'],
                 "previous_owner": item["history"]["previousUsage"]["description"],
                 "license_plate": item["licensePlate"],
                 "vin": item["vin"],

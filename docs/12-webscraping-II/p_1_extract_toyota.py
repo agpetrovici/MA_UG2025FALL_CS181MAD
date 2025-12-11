@@ -12,7 +12,7 @@ payload = {
     ],
     "filterContext": "used",
     "offset": 0,
-    "resultCount": 10,
+    "resultCount": 343,
     "sortOrder": "cashAsc",
     "distributorCode": "94244",
     "includeActiveFilterAggregations": False,
